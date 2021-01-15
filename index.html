@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
-
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <title>Portfolio</title>
 </head>
 
@@ -86,12 +86,12 @@
         </div>
         <div class="row">
           <div class="section-left text-center d-flex align-items-center flex-column col-sm-6" style="height:100%; padding-top:12%;">
-            <h6 style="margin-bottom:-5px; padding-right:50%;">what i use to bring</h6>
+            <!-- <h6 style="margin-bottom:-5px; padding-right:50%;">what i use to bring</h6> -->
             <h3>DESIGN</h3>
-            <h6 style="margin-top:-15px; padding-left:70%;">to life</h6>
+            <!-- <h6 style="margin-top:-15px; padding-left:70%;">to life</h6> -->
             <ul style="margin-top:10%;">
               <li>Figma</li>
-              <li>Adobe XC</li>
+              <li>Adobe XD</li>
               <li>Adobe Photoshop</li>
               <li>Adobe InDesign</li>
               <li>Adobe Illustrator</li>
@@ -101,9 +101,9 @@
             </ul>
           </div>
           <div class="section-right text-center d-flex align-items-center flex-column col-sm-6" style="height:100%; padding-top:12%;">
-            <h6 style="margin-bottom:-5px; padding-left:50%;">what i use to bring</h6>
+            <!-- <h6 style="margin-bottom:-5px; padding-left:50%;">what i use to bring</h6> -->
             <h3>BACKEND</h3>
-            <h6 style="margin-top:-10px; padding-right:60%">to life</h6>
+            <!-- <h6 style="margin-top:-10px; padding-right:60%">to life</h6> -->
             <ul style="margin-top:20%;">
               <li>Python Django</li>
               <li>Docker</li>
@@ -126,28 +126,89 @@
         <div>MY WORKS MY WORKS MY WORKS MY WORKS MY WORKS MY WORKS MY WORKS</div>
       </div>
 
-      <div class="filter">
+      <div class="filter" data-toggle="tooltip" data-placement="bottom" title="Not available yet">
         <img src="./img/filter.svg" alt="Filter">
       </div>
-      <div class="filter-extended">
+      <div class="filter-extended" style="pointer-events:none">
         <div class="top design-filter">DESIGN</div>
         <div class="bottom backend-filter">BACKEND</div>
       </div>
 
       <div class="offset-sm-2 col-sm-8 m-0 p-0 section-projects" style="height:70%;">
-        <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel">
+        <div class="carousel slide h-100" data-ride="carousel">
           <div class="carousel-inner h-100">
             <div class="carousel-item active text-center h-100 design-item" style="background-color:#70588C;">
-              <img class="d-block w-100" src="./img/projects/project1.jpg" alt="First slide">
+              <a href="https://www.figma.com/file/iq453ClZ5vI9AwSasPPK44/quiz?node-id=0%3A1" target="_blank"><img class="d-block w-100" src="./img/projects/project1.jpg" alt="Project Quiz"></a>
               <div class="carousel-caption d-none d-md-block">
                 <h4>Design</h4>
+                <p>Figma Project</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <a href="https://www.figma.com/file/iq453ClZ5vI9AwSasPPK44/quiz?node-id=0%3A1" target="_blank"><img class="d-block w-100" src="./img/projects/project2.jpg" alt="Project Quiz"></a>
+              <div class="carousel-caption d-none d-md-block" style="color:black">
+                <h4>Design</h4>
+                <p>Figma Project</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <a href="https://www.figma.com/file/T3Xr4StKt5Rh1mqYvOoLga/IBDB?node-id=0%3A1" target="_blank"><img class="d-block w-100" src="./img/projects/project3.jpg" alt="Project Internet Book Database"></a>
+              <div class="carousel-caption d-none d-md-block" >
+                <h4>Design</h4>
+                <p>Figma Project</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <a href="#" target="_blank"><img class="d-block w-100" src="./img/projects/project4.jpg" alt="Project Portfolio"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Design</h4>
+                <p>Adobe XD + HTML/CSS/JavaScript/Bootstrap/jQuery Project</p>
               </div>
             </div>
             <div class="carousel-item text-center h-100 backend-item" style="background-color:white;">
-              <img class="d-block w-100" src="./img/projects/project2.jpg" alt="Second slide">
+              <a href="https://librarym.pythonanywhere.com/" target="_blank"><img class="d-block w-100" src="./img/projects/project5.jpg" alt="Project Book Management System"></a>
+              <div class="carousel-caption d-none d-md-block" style="color:black;">
+                <h4>Backend</h4>
+                <p>Python Django + HTML/CSS/JavaScript/Bootstrap/jQuery Project</p>
+              </div>
             </div>
-            <div class="carousel-item text-center h-100">
-              <img class="d-block w-100" src="./img/projects/project1.jpg" alt="Third slide">
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <img class="d-block w-100" src="./img/projects/project6.jpg" alt="Project Mobile Application Advertisement">
+              <div class="carousel-caption d-none d-md-block" style="color:white">
+                <h4>Design</h4>
+                <p>Static Advertisement for Mobile Application (Photoshop)</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <img class="d-block w-100" src="./img/projects/project6.2.jpg" alt="Project Mobile Application Advertisement">
+              <div class="carousel-caption d-none d-md-block" style="color:black;">
+                <h4>Design</h4>
+                <p>Static Advertisement for Mobile Application (Photoshop)</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:#056571;">
+              <a href="https://docs.google.com/presentation/d/1QcKFIwHG42qYRudmbyNw5HtA7pa31c8IL_LVRV31koM/edit?usp=sharing" target="_blank"><img class="d-block w-100" src="./img/projects/project7.jpg" alt="Project Presentation"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Design</h4>
+                <p>Presentation (Google Slides)</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+    <video class="d-block w-100" autoplay loop muted>
+      <source src="./img/projects/project8.mp4">
+        Your browser does not support the video tag.
+      </video>
+              <div class="carousel-caption d-none d-md-block" style="mix-blend-mode:difference;">
+                <h4>Design</h4>
+                <p>Animated Advertisement (After Effects)</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center h-100 design-item" style="background-color:white;">
+              <img class="d-block w-100 mt-5" src="./img/projects/project9.svg" alt="Project Mobile Application Advertisement" style="max-height:50%;">
+              <div class="carousel-caption d-none d-md-block" style="color:black;">
+                <h4>Design</h4>
+                <p>Logos and Vector Illustrations (Illustrator)</p>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
