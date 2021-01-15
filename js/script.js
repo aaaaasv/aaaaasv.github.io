@@ -5,10 +5,12 @@ $(document).ready(function() {
 
   function hoverFunction() {
     if (!filterShown) {
+      return;
       filterBlock.hide();
       filterExtended.show();
       filterShown = true;
     } else {
+      return;
       filterBlock.show();
       filterExtended.hide();
       filterShown = false;
