@@ -54,10 +54,13 @@ var designBrainPattern = $('.design-brain-section');
 
 function activateDesignBrain() {
   designBrainPattern.show("scale",{},patternAnimationSpeed);
-
+  $('.glasses-inner').css("fill", "rgba(255, 255, 255, .3)");
 }
 function deactivateDesignBrain() {
   designBrainPattern.hide("scale", {}, patternAnimationSpeed);
+  $('body').css("background-color", "");
+  $('.glasses-inner').css("fill", "");
+
 }
 
 $('.design-brain').on('mouseenter', activateDesignBrain);
@@ -66,9 +69,13 @@ $('.design-brain').on('mouseleave', deactivateDesignBrain);
 
 function activateMathBrain() {
   mathBrainPattern.show("scale",{},patternAnimationSpeed);
+  $('.glasses-inner').css("fill", "rgba(0, 0, 0, .2)");
+
 }
 function deactivateMathBrain() {
   mathBrainPattern.hide("scale", {}, patternAnimationSpeed);
+  $('.glasses-inner').css("fill", "")
+
 }
 
 $('.math-brain').on('mouseenter', activateMathBrain);
