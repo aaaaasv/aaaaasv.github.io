@@ -314,6 +314,18 @@ ul {
   background-color:#361057;
   position:relative;
 }
+.carousel-caption {
+  bottom:0;
+  background-color: rgba(54, 16, 87, .8);
+  -webkit-border-top-left-radius: 40px;
+-webkit-border-top-right-radius: 40px;
+-moz-border-radius-topleft: 40px;
+-moz-border-radius-topright: 40px;
+border-top-left-radius: 40px;
+border-top-right-radius: 40px;
+}
+
+
 @media screen and (max-width: 992px) {
   .main-section img, .main-section svg {
     width: 100%;
