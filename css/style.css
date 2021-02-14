@@ -206,25 +206,38 @@ ul {
 }
 
 .background-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
+  top:0;
+  bottom:0;
   margin: auto;
-  height: 30%;
   overflow: hidden;
+  left:0;
   z-index: 1;
 }
 
 .background-title div {
   font-size: 60px;
   line-height: 65px;
-  color: white;
-  opacity: .23;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-left: -30px;
   font-weight: 900;
 }
-
+.background-title-top {
+  color: #64477D;
+  z-index:1;
+}
+.background-title-back {
+  transform: translateX(-3px);
+  -webkit-text-stroke: 1px #64477D;
+  color:transparent;
+  z-index:0;
+}
 .section-projects {
   z-index: 10;
   height:70%;
