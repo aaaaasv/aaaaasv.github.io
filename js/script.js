@@ -5,12 +5,10 @@ $(document).ready(function() {
 
   function hoverFunction() {
     if (!filterShown) {
-      return;
       filterBlock.hide();
       filterExtended.show();
       filterShown = true;
     } else {
-      return;
       filterBlock.show();
       filterExtended.hide();
       filterShown = false;
@@ -30,8 +28,8 @@ $(document).ready(function() {
       removeFilter();
       return;
     }
-    $('.backend-item').removeClass('carousel-item').hide();
-    $('.design-item').addClass('carousel-item').show();
+    $('.backend-item').removeClass('carousel-item').hide()
+    $('.design-item').addClass('carousel-item').show()
     $(this).text("X");
   })
 
@@ -41,8 +39,11 @@ $(document).ready(function() {
       removeFilter();
       return;
     }
-    $('.backend-item').addClass('carousel-item').show();
-    $('.design-item').removeClass('carousel-item').hide();
+    // $('.backend-item').addClass('carousel-item').show()
+    // $('.design-item').removeClass('carousel-item').hide()
+
+    $('.backend-item').css('visibility', 'hidden')
+
     $(this).text("X");
 
 
